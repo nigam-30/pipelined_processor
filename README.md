@@ -60,10 +60,10 @@ Pipelined-Processor/
 ├── README.md
 ├── pipelined_processor.zip
 │
-└── docs/
-    ├── rtl_schematic.png
-    ├── synthesized_schematic.png
-    └── simulation_waveform.png
+└── Outputs/
+    ├── RTL_Schematic.pdf
+    ├── Synthesized_Schematic.pdf
+    └── Waveform.png
 ```
 
 The complete Vivado project is provided as `pipelined_processor.zip`.
