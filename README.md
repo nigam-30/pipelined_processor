@@ -75,8 +75,8 @@ pipelined_processor/
 │   └── constraints.xdc
 │
 └── Outputs/
-    ├── RTL_Schematic.png
-    ├── Synthesized_Schematic.png
+    ├── RTL_Schematic.pdf
+    ├── Synthesized_Schematic.pdf
     └── Waveform.png
 ```
 
@@ -90,11 +90,11 @@ Behavioral simulation in Vivado XSim, showing `clk`, `rst`, `led[7:0]`, and `hal
 
 ## RTL Schematic
 
-![RTL Schematic](Outputs/RTL_Schematic.png)
+Output can be viewed in the output folder in zip file
 
 ## Synthesized Schematic
 
-![Synthesized Schematic](Outputs/Synthesized_Schematic.png)
+Output can be viewed in the output folder in zip file
 
 ## Tools Used
 
