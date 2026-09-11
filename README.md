@@ -89,15 +89,17 @@ The simulation verifies instruction execution, ALU operations, pipeline behavior
 
 ### Simulation Waveform
 
-![Simulation Waveform](docs/simulation_waveform.png)
+The simulation waveform is included in the project ZIP file for reference and verification.
 
 ## RTL Schematic
 
-![RTL Schematic](docs/rtl_schematic.png)
+The RTL schematic is included in the project ZIP file.
 
 ## Synthesized Schematic
 
-![Synthesized Schematic](docs/synthesized_schematic.png)
+The synthesized schematic is included in the project ZIP file.
+
+
 
 ## Tools Used
 
