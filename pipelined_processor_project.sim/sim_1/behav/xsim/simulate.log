@@ -1,0 +1,59 @@
+Time resolution is 1 ps
+Time=0 | PC=  x | ID_Instr=xxxxxxxx | EX_Result=  x | LED=xxxxxxxx | Halt=x
+Time=5000 | PC=  0 | ID_Instr=00000000 | EX_Result=  0 | LED=00000000 | Halt=0
+Time=25000 | PC=  1 | ID_Instr=01001011 | EX_Result=  0 | LED=00000000 | Halt=0
+Time=35000 | PC=  2 | ID_Instr=01010101 | EX_Result=  3 | LED=00000000 | Halt=0
+Time=45000 | PC=  3 | ID_Instr=00001010 | EX_Result=  5 | LED=00000011 | Halt=0
+Time=55000 | PC=  3 | ID_Instr=00001010 | EX_Result=  3 | LED=00000101 | Halt=0
+Time=65000 | PC=  4 | ID_Instr=10010001 | EX_Result=  8 | LED=00000011 | Halt=0
+Time=75000 | PC=  4 | ID_Instr=10010001 | EX_Result=  2 | LED=00001000 | Halt=0
+Time=85000 | PC=  5 | ID_Instr=11011010 | EX_Result=253 | LED=00000010 | Halt=0
+Time=95000 | PC=  5 | ID_Instr=11011010 | EX_Result=  0 | LED=11111101 | Halt=0
+Time=105000 | PC=  6 | ID_Instr=01011111 | EX_Result=  0 | LED=00000000 | Halt=0
+Time=115000 | PC=  7 | ID_Instr=11011001 | EX_Result=  7 | LED=00000000 | Halt=0
+Time=125000 | PC=  8 | ID_Instr=00100001 | EX_Result=  0 | LED=00000111 | Halt=0
+Time=135000 | PC=  9 | ID_Instr=01100010 | EX_Result=  8 | LED=00000000 | Halt=0
+Time=145000 | PC= 10 | ID_Instr=10101100 | EX_Result=  2 | LED=00001000 | Halt=0
+Time=155000 | PC= 10 | ID_Instr=10101100 | EX_Result=248 | LED=00000010 | Halt=0
+Time=165000 | PC= 11 | ID_Instr=00101011 | EX_Result=254 | LED=11111000 | Halt=0
+Time=175000 | PC= 12 | ID_Instr=01110001 | EX_Result=248 | LED=11111110 | Halt=0
+Time=185000 | PC= 13 | ID_Instr=11110011 | EX_Result=  1 | LED=11111000 | Halt=0
+Time=195000 | PC= 14 | ID_Instr=00110001 | EX_Result=  0 | LED=00000001 | Halt=0
+Time=205000 | PC= 15 | ID_Instr=01111111 | EX_Result=  9 | LED=00000000 | Halt=0
+Time=215000 | PC= 16 | ID_Instr=11111111 | EX_Result=  7 | LED=00001001 | Halt=0
+Time=225000 | PC= 16 | ID_Instr=11111111 | EX_Result=  0 | LED=00000111 | Halt=0
+Time=235000 | PC= 16 | ID_Instr=00000000 | EX_Result=  0 | LED=00000111 | Halt=1
+Time=245000 | PC= 17 | ID_Instr=01001011 | EX_Result=  0 | LED=00000111 | Halt=1
+Time=255000 | PC= 18 | ID_Instr=01010101 | EX_Result= 11 | LED=00000111 | Halt=1
+Time=265000 | PC= 19 | ID_Instr=00001010 | EX_Result=  2 | LED=00001011 | Halt=1
+Time=275000 | PC= 19 | ID_Instr=00001010 | EX_Result=  8 | LED=00000010 | Halt=1
+Time=285000 | PC= 20 | ID_Instr=10010001 | EX_Result= 13 | LED=00001000 | Halt=1
+Time=295000 | PC= 20 | ID_Instr=10010001 | EX_Result=250 | LED=00001101 | Halt=1
+Time=305000 | PC= 21 | ID_Instr=11011010 | EX_Result=245 | LED=11111010 | Halt=1
+Time=315000 | PC= 21 | ID_Instr=11011010 | EX_Result=  0 | LED=11110101 | Halt=1
+Time=325000 | PC= 22 | ID_Instr=01011111 | EX_Result=  0 | LED=00000000 | Halt=1
+Time=335000 | PC= 23 | ID_Instr=11011001 | EX_Result=  7 | LED=00000000 | Halt=1
+Time=345000 | PC= 24 | ID_Instr=00100001 | EX_Result=  0 | LED=00000111 | Halt=1
+Time=355000 | PC= 25 | ID_Instr=01100010 | EX_Result= 15 | LED=00000000 | Halt=1
+Time=365000 | PC= 26 | ID_Instr=10101100 | EX_Result=  4 | LED=00001111 | Halt=1
+Time=375000 | PC= 26 | ID_Instr=10101100 | EX_Result=233 | LED=00000100 | Halt=1
+Time=385000 | PC= 27 | ID_Instr=00101011 | EX_Result=244 | LED=11101001 | Halt=1
+Time=395000 | PC= 28 | ID_Instr=01110001 | EX_Result=233 | LED=11110100 | Halt=1
+Time=405000 | PC= 29 | ID_Instr=11110011 | EX_Result= 10 | LED=11101001 | Halt=1
+Time=415000 | PC= 30 | ID_Instr=00110001 | EX_Result= 72 | LED=00001010 | Halt=1
+Time=425000 | PC= 31 | ID_Instr=01111111 | EX_Result= 23 | LED=01001000 | Halt=1
+Time=435000 | PC= 32 | ID_Instr=11111111 | EX_Result= 14 | LED=00010111 | Halt=1
+Time=445000 | PC= 32 | ID_Instr=11111111 | EX_Result= 14 | LED=00001110 | Halt=1
+Time=455000 | PC= 32 | ID_Instr=00000000 | EX_Result=  0 | LED=00001110 | Halt=1
+Time=465000 | PC= 33 | ID_Instr=01001011 | EX_Result=  0 | LED=00001110 | Halt=1
+Time=475000 | PC= 34 | ID_Instr=01010101 | EX_Result= 16 | LED=00001110 | Halt=1
+Time=485000 | PC= 35 | ID_Instr=00001010 | EX_Result=250 | LED=00010000 | Halt=1
+Time=495000 | PC= 35 | ID_Instr=00001010 | EX_Result=  5 | LED=11111010 | Halt=1
+Time=505000 | PC= 36 | ID_Instr=10010001 | EX_Result= 10 | LED=00000101 | Halt=1
+Time=515000 | PC= 36 | ID_Instr=10010001 | EX_Result=245 | LED=00001010 | Halt=1
+========================================
+Simulation Complete
+Final LED output: 00001010
+Halt flag: 1
+========================================
+$finish called at time : 520 ns : File "D:/pipelined_processor_project/pipelined_processor_project.srcs/sim_1/imports/sim/tb_top.v" Line 40
