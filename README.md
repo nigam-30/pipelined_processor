@@ -127,7 +127,7 @@ The Synthesized Schematic is available in [Outputs/Synthesized_Schematic.pdf](Ou
 
 ## Result
 
-The processor was successfully simulated, synthesized, and implemented on a Spartan-7 FPGA, with RTL and synthesized schematics confirming the intended pipeline architecture, and the LED output reflecting correct instruction execution.
+The processor was successfully simulated, synthesized, with RTL and synthesized schematics confirming the intended pipeline architecture.
 
 ## Author
 
