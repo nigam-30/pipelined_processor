@@ -1,3 +1,5 @@
+# 8-bit Pipelined RISC Processor (Verilog HDL)
+
 An 8-bit, 3-stage pipelined RISC processor designed in **Verilog HDL** and implemented on **AMD Xilinx Vivado**, targeting a **Spartan-7 FPGA**.
 
 The design covers instruction fetch, decode, ALU execution, pipeline registers, register file operations, RAW hazard detection with stalling, pipeline flush on `HALT`, and stable LED output — verified through simulation, RTL elaboration, synthesis, and hardware implementation.
@@ -56,31 +58,37 @@ pipelined_processor/
 ├── README.md
 ├── LICENSE
 ├── Pipelined_Processor_Project_Report.pdf
-├── pipelined_processor.zip        # full Vivado project (cache, runs, checkpoints)
 │
-├── src/                           # Verilog RTL source
-│   ├── top.v
-│   ├── alu.v
-│   ├── control.v
-│   ├── pc.v
-│   ├── reg_file.v
-│   ├── if_id_reg.v
-│   ├── id_ex_reg.v
-│   └── instr_mem.v
+├── pipelined_processor_project.srcs/           # Vivado source files & constraints
+│   ├── sources_1/imports/src/                  # Verilog RTL source files
+│   │   ├── top.v
+│   │   ├── alu.v
+│   │   ├── control.v
+│   │   ├── pc.v
+│   │   ├── reg_file.v
+│   │   ├── if_id_reg.v
+│   │   ├── id_ex_reg.v
+│   │   └── instr_mem.v
+│   ├── sim_1/imports/sim/                      # Testbench
+│   │   └── tb_top.v
+│   └── constrs_1/imports/constrs/              # FPGA Pin & clock constraints
+│       └── constraints.xdc
 │
-├── sim/                           # Testbench
-│   └── tb_top.v
+├── pipelined_processor_project.sim/            # Vivado simulation directory
+│   └── sim_1/behav/xsim/                       # Simulation scripts, logs & wave database
+│       ├── compile.bat / elaborate.bat / simulate.bat
+│       ├── tb_top_behav.wdb
+│       └── *.log
 │
-├── constrs/                       # Pin / clock constraints
-│   └── constraints.xdc
-│
-└── Outputs/
+└── Outputs/                                    # Waveform & schematic reports
     ├── RTL_Schematic.pdf
     ├── Synthesized_Schematic.pdf
     └── Waveform.png
 ```
 
-The `src/`, `sim/`, and `constrs/` folders contain the raw Verilog source so the design can be browsed directly on GitHub. `pipelined_processor.zip` contains the complete Vivado project (including build artifacts) for anyone who wants to open it directly in Vivado.
+- **`pipelined_processor_project.srcs/`**: Contains the complete Verilog RTL design sources (`sources_1`), simulation testbench (`sim_1`), and constraints file (`constrs_1`) for pin and clock mappings.
+- **`pipelined_processor_project.sim/`**: Contains simulation run files, logs, and artifacts generated during Vivado behavioral simulation.
+- **`Outputs/`**: Contains exported RTL and synthesized schematics along with the behavioral simulation waveform.
 
 ## Simulation Waveform
 
@@ -90,11 +98,11 @@ Behavioral simulation in Vivado XSim, showing `clk`, `rst`, `led[7:0]`, and `hal
 
 ## RTL Schematic
 
-Output can be viewed in the output folder in zip file
+The RTL Schematic is available in [Outputs/RTL_Schematic.pdf](Outputs/RTL_Schematic.pdf).
 
 ## Synthesized Schematic
 
-Output can be viewed in the output folder in zip file
+The Synthesized Schematic is available in [Outputs/Synthesized_Schematic.pdf](Outputs/Synthesized_Schematic.pdf).
 
 ## Tools Used
 
@@ -105,11 +113,17 @@ Output can be viewed in the output folder in zip file
 
 ## How to Run
 
-1. Clone this repository, or download `pipelined_processor.zip` for the full Vivado project.
-2. If using the zip: extract it and open `pipelined_processor.xpr` in Vivado.
-3. Run **Behavioral Simulation** to view the waveform.
-4. Run **Synthesis** and **Implementation** to view the schematics and generate the bitstream.
-5. Program the Spartan-7 FPGA to observe the LED output.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/nigam-30/pipelined_processor.git
+   ```
+2. Open AMD Xilinx Vivado and create a new project targeting the Spartan-7 FPGA.
+3. Add the design sources from `pipelined_processor_project.srcs/sources_1/imports/src/`.
+4. Add the simulation testbench from `pipelined_processor_project.srcs/sim_1/imports/sim/tb_top.v`.
+5. Add the constraints from `pipelined_processor_project.srcs/constrs_1/imports/constrs/constraints.xdc`.
+6. Run **Behavioral Simulation** to inspect the waveform.
+7. Run **Synthesis** and **Implementation** to view schematics and generate the bitstream.
+8. Program the Spartan-7 FPGA to observe the physical LED output.
 
 ## Result
 
@@ -117,7 +131,7 @@ The processor was successfully simulated, synthesized, and implemented on a Spar
 
 ## Author
 
-**Nigam Mehta**
+**Nigam Mehta**  
 [GitHub](https://github.com/nigam-30) · [LinkedIn](https://linkedin.com/in/nigam-mehta-83830528b)
 
 ## License
